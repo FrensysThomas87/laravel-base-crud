@@ -10008,6 +10008,6 @@ h3 {
   box-sizing: border-box;
 }
 
-img {
+.container img {
   width: 300px;
 }
