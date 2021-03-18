@@ -10002,9 +10002,12 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.table tbody tr .img-container {
-  width: 300px;
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
-.table tbody tr .img-container td img {
+
+img {
   width: 300px;
 }

@@ -28,7 +28,7 @@
                     <td>{{$beer->nationality}}</td>
                     <td>{{$beer->liters}}</td>
                     <div class="img-container">
-                        <td><img src ="{{$beer->image}}"/></td>
+                        <td><img src="{{$beer->image}}"/></td>
                     </div>
                 </tr>
             </tbody>
