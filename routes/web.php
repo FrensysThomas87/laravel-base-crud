@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 
 */
 
-Route::get('/', 'BeerController@index');
-Route::get('/beer', 'BeerController@show');
+//Route::get('/', 'BeerController@index');
+Route::resource('/beers', 'BeerController');
