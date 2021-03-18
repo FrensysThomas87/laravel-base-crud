@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'BeerController@index');
+Route::get('/beer', 'BeerController@show');
