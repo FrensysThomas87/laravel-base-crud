@@ -18,24 +18,24 @@
 
             </div>
             <div class="form-group">
-              <label for="beer-typology">Beer's Typology</label>
-              <input type="text" class="form-control" name="beer-typology" placeholder="Enter beer's typology">
+              <label for="beer_typology">Beer's Typology</label>
+              <input type="text" class="form-control" name="beer_typology" placeholder="Enter beer's typology">
             </div>
             <div class="form-group">
                 <label for="nationality">Nationality</label>
                 <input type="text" class="form-control" name="nationality" placeholder="Enter Beer's Nationality">
               </div>
               <div class="form-group">
-                <label for="price">Price</label>
-                <input type="text" class="form-control" name="price" placeholder="Enter Price">
-              </div>
-              <div class="form-group">
                 <label for="liters">Liters</label>
                 <input type="text" class="form-control" name="liters" placeholder="Enter Liters">
               </div>
               <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" class="form-control" name="price" placeholder="Enter Price">
+              </div>
+              <div class="form-group">
                 <label for="image">Image</label>
-                <input type="text" class="form-control" name="liters" placeholder="Enter Image's Url">
+                <input type="text" class="form-control" name="image" placeholder="Enter Image's Url">
               </div>
 
             <button type="submit" class="btn btn-primary">Crea Prodotto</button>

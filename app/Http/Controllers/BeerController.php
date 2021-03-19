@@ -39,11 +39,13 @@ class BeerController extends Controller
      */
     public function store(Request $request)
     {
-        $data= $request->all();
+        $data = $request->all();
 
         $beerNew = new Beer();
 
         $beerNew->fill($data);
+
+        $beerNew->save();
 
         $beer = Beer::orderBy('id', 'desc')->first();
 
