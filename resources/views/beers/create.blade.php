@@ -21,7 +21,7 @@
     @endif
 
     <div class="container">
-        <form class="needs-validation" novalidate action="{{route('beers.store')}}" method="post" >
+        <form action="{{route('beers.store')}}" method="post" >
             @csrf
             @method('POST')
             <div class="form-group">

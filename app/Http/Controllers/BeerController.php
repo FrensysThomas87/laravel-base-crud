@@ -42,7 +42,7 @@ class BeerController extends Controller
 
         $request->validate([
             'brand' => 'required|max:255',
-            'price' =>'required|6'
+
 
             ]);
 
