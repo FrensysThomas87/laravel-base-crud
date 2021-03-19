@@ -39,7 +39,17 @@ class BeerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data= $request->all();
+
+        $beerNew = new Beer();
+
+        $beerNew->fill($data);
+
+        $beer = Beer::orderBy('id', 'desc')->first();
+
+        return redirect()->route('beers.show', $beer);
+
+
     }
 
     /**
