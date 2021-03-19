@@ -8,6 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+        <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+        </ul>
+        </div>
+    @endif
+
     <div class="container">
         <form action="{{route('beers.store')}}" method="post">
             @csrf
