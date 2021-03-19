@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Laravel Base Crud</title>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <script src="{{ asset('js/app.js') }}"></script>
         </head>
         <body>
             <div class="container">
@@ -20,18 +21,16 @@
                             <th scope="col">Image</th>
                             </tr>
                         </thead>
+
                         <tbody>
-                        
-                            <tr>
-                                <th scope="row">{{$beer->id}}</th>
+                            <th scope="row">{{$beer->id}}</th>
                                 <td>{{$beer->brand}}</td>
                                 <td>{{$beer->beer_typology}}</td>
                                 <td>{{$beer->nationality}}</td>
                                 <td>{{$beer->price}}</td>
                                 <td>{{$beer->liters}}</td>
-                                <div class="img-container">
-                                    <td><img src="{{$beer->image}}"/></td>
-                                </div>
+                                <td><img src="{{$beer->image}}"/></td>
+
                             </tr>
                         </tbody>
                     </table>

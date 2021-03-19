@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <title>Laravel Base Crud</title>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <script src="{{ asset('js/app.js') }}"></script>
         </head>
         <body>
             <div class="container">
-                <div class="row">
+                  <div class="row">
                     <table class="table">
                         <thead class="thead-dark">
-                            <tr>
+                           <tr>
                             <th scope="col">#</th>
                             <th scope="col">Brand</th>
                             <th scope="col">Beer Typology</th>
@@ -24,20 +25,18 @@
                             @foreach($beers as $beer)
                             <tr>
                                 <th scope="row">{{$beer->id}}</th>
-                                <td>{{$beer->brand}}</td>
+                                <td><a href="{{route('beers.show', compact('beer'))}}">{{$beer->brand}}</a></td>
                                 <td>{{$beer->beer_typology}}</td>
                                 <td>{{$beer->nationality}}</td>
                                 <td>{{$beer->price}}</td>
                                 <td>{{$beer->liters}}</td>
-                                <div class="img-container">
-                                    <td><img src="{{$beer->image}}"/></td>
-                                </div>
+                                <td><img src="{{$beer->image}}"/></td>
                             </tr>
                         </tbody>
                             @endforeach
                     </table>
                 </div>
-            </div>      
+            </div>
         </body>
     </html>
 
