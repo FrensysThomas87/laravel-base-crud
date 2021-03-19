@@ -9,31 +9,14 @@
         <body>
             <div class="container">
                 <div class="row">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Brand</th>
-                            <th scope="col">Beer Typology</th>
-                            <th scope="col">Nationality</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Liters</th>
-                            <th scope="col">Image</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <th scope="row">{{$beer->id}}</th>
-                                <td>{{$beer->brand}}</td>
-                                <td>{{$beer->beer_typology}}</td>
-                                <td>{{$beer->nationality}}</td>
-                                <td>{{$beer->price}}</td>
-                                <td>{{$beer->liters}}</td>
-                                <td><img src="{{$beer->image}}"/></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="card" style="width: 18rem;">
+                        <img class="" src="{{$beer->image}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">{{$beer->brand}}</h5>
+                          <p class="card-text">{{$beer->price}}</p>
+                          <a href="{{route('beers.index')}}" class="btn btn-primary">Go Back</a>
+                        </div>
+                      </div>
                 </div>
             </div>
         </body>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <script src="{{ asset('js/app.js') }}"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,12 +21,12 @@
     @endif
 
     <div class="container">
-        <form action="{{route('beers.store')}}" method="post">
+        <form class="needs-validation" novalidate action="{{route('beers.store')}}" method="post" >
             @csrf
             @method('POST')
             <div class="form-group">
               <label for="brand">Brand</label>
-              <input type="text" class="form-control" name="brand" placeholder="Enter beer's brand">
+              <input type="text" class="form-control" name="brand" placeholder="Enter beer's brand" required>
 
             </div>
             <div class="form-group">
