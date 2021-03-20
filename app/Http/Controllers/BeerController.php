@@ -44,6 +44,8 @@ class BeerController extends Controller
             'brand' => 'required|max:255',
 
 
+
+
             ]);
 
         $data = $request->all();
