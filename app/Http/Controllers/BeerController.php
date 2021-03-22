@@ -85,7 +85,7 @@ class BeerController extends Controller
      */
     public function edit(Beer $beer)
     {
-        return view('beers.edit', compact($beer));
+        return view('beers.edit', compact('beer'));
     }
 
     /**
