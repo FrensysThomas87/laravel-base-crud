@@ -10,7 +10,8 @@
                             <div class="card-body">
                               <h5 class="card-title">{{$beer->brand}}</h5>
                               <p class="card-text">{{$beer->price}}</p>
-                              <a href="{{route('beers.index')}}" class="btn btn-primary">Go Back</a>
+                              <a href="{{route('beers.index')}}" class="btn btn-primary">See al beers</a>
+                              <a href="{{route('beers.edit', compact('beer'))}}" class="btn btn-primary">Edit</a>
                             </div>
                           </div>
                     </div>

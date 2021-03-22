@@ -3,11 +3,11 @@
 
         @section('create-content')
 
-        <div class="custom-container">
-            <div class="container">
-                @include('beers.form')
+            <div class="custom-container">
+                <div class="container">
+                    @include('beers.form')
+                </div>
             </div>
-        </div>
 
         @endsection
 
