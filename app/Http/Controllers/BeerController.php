@@ -40,14 +40,7 @@ class BeerController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
-            'brand' => 'required|max:255',
-            'beer_typology' => 'required|max:255',
-            'nationality' => 'required|max:255',
-            'liters' => 'required|numeric|between:0,99.99',
-            'price' => 'required|numeric|between:0,99.99',
-            'image' => 'required|max:2065'
-            ]);
+        $this->validateInput($request);
 
         $data = $request->all();
 
@@ -99,6 +92,7 @@ class BeerController extends Controller
      */
     public function update(Request $request, Beer $beer)
     {
+        $this->validateInput($request);
         $data = $request->all();
         $beer->update($data);
 
@@ -116,5 +110,18 @@ class BeerController extends Controller
         $beer->delete();
 
         return redirect()->route('beers.index');
+    }
+
+    protected function validateInput(Request $request){
+
+        $request->validate([
+            'brand' => 'required|max:255',
+            'beer_typology' => 'required|max:255',
+            'nationality' => 'required|max:255',
+            'liters' => 'required|numeric|between:0,99.99',
+            'price' => 'required|numeric|between:0,99.99',
+            'image' => 'required|max:2065'
+            ]);
+
     }
 }

@@ -51,7 +51,7 @@
                           </tbody>
                               @endforeach
                       </table>
-                      <a href="{{route('beers.create')}}"><button>Aggiungi una birra</button></a>
+                      <a href="{{route('beers.create')}}"><button class="btn btn-primary">Aggiungi una birra</button></a>
                   </div>
             @endsection
 
