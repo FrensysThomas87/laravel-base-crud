@@ -40,18 +40,20 @@
                                         </i>
                                     </a>
 
-                                   <form action="{{route('beers.destroy', compact('beer'))}}" method="post">
-                                         @csrf
-                                         @method('DELETE')
 
-                                         <button type="submit"><i class="fas fa-trash-alt"></i></button>
-                                    </form>
+
+                                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <i class="fas fa-trash-alt"></i>
+
+                                           </button>
+
                                 </td>
                               </tr>
                           </tbody>
                               @endforeach
                       </table>
                       <a href="{{route('beers.create')}}"><button class="btn btn-primary">Aggiungi una birra</button></a>
+                      @include('beers.modal')
                   </div>
             @endsection
 
