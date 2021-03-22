@@ -71,7 +71,7 @@
                     </div>
                   </div>
 
-                <button type="submit" class="btn btn-primary">Crea Prodotto</button>
+                <button type="submit" class="btn btn-primary">Invia</button>
               </form>
             </div>
         </div>
