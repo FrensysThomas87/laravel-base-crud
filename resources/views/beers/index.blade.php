@@ -46,6 +46,13 @@
                                             <i class="fas fa-edit"></i>
                                         </i>
                                     </a>
+
+                                   <form action="{{route('beers.destroy', compact('beer'))}}" method="post">
+                                         @csrf
+                                         @method('DELETE')
+
+                                         <button type="submit"><i class="fas fa-trash-alt"></i></button>
+                                    </form>
                                 </td>
                               </tr>
                           </tbody>

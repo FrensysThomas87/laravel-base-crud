@@ -108,11 +108,13 @@ class BeerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int Beer $beer
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Beer $beer)
     {
-        //
+        $beer->delete();
+
+        return redirect()->route('beers.index');
     }
 }
