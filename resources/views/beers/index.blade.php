@@ -1,14 +1,7 @@
-    <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-        <head>
-        <meta charset="utf-8">
-        <title>Laravel Base Crud</title>
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <script src="{{ asset('js/app.js') }}"></script>
-        </head>
 
-        <body>
+@extends('beers.base')
 
+    @section('index-content')
                 <div class="container">
                     <div class="row">
                       <table class="table">
@@ -60,11 +53,6 @@
                       </table>
                       <a href="{{route('beers.create')}}"><button>Aggiungi una birra</button></a>
                   </div>
-
-
-
-        </body>
-    </html>
-
+            @endsection
 
 

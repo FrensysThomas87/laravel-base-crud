@@ -1,12 +1,7 @@
-    <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-        <head>
-        <meta charset="utf-8">
-        <title>Laravel Base Crud</title>
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <script src="{{ asset('js/app.js') }}"></script>
-        </head>
-        <body>
+
+@extends('beers.base')
+
+    @section('show-content')
             <div class="custom-container">
                 <div class="container">
                     <div class="row">
@@ -21,8 +16,7 @@
                     </div>
                 </div>
             </div>
-        </body>
-    </html>
 
+    @endsection
 
 
