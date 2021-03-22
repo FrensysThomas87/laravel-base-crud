@@ -48,17 +48,15 @@
 
                                     </a>
 
-
-
-                                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
-                                                <i class="fas fa-trash-alt"></i>
+                                    <button type="button" class="btn btn-danger bool-btn-destroy-index" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <i class="fas fa-trash-alt"></i>
                                             Elimina Birra
-                                           </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
                               @endforeach
-                            </table>
+                    </table>
 
                       <a href="{{route('beers.create')}}"><button class="btn btn-primary">Aggiungi una birra</button></a>
                       @include('beers.modal')

@@ -11,8 +11,8 @@
                               <h5 class="card-title">{{$beer->brand}}</h5>
                               <p class="card-text">{{$beer->price}}</p>
                               <a href="{{route('beers.index')}}" class="btn btn-primary">See al beers</a>
-                              <a href="{{route('beers.edit', compact('beer'))}}" class="btn btn-primary">Edit</a>
-                              <a href="{{route('beers.create')}}" class="btn btn-primary">Aggiungi una nuova birra</a>
+                              <a href="{{route('beers.edit', compact('beer'))}}" class="btn btn-primary ">Edit</a>
+                              <a href="{{route('beers.create')}}" class="btn btn-primary bool-btn-show-create">Aggiungi una nuova birra</a>
                             </div>
                           </div>
                     </div>

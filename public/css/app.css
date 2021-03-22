@@ -10014,3 +10014,7 @@ h3 {
 .container img {
   width: 300px;
 }
+.container .bool-btn-show-create,
+.container .bool-btn-destroy-index {
+  margin-top: 10px;
+}
