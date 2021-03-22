@@ -29,29 +29,37 @@
                                   <td><img src="{{$beer->image}}"/></td>
                                   <td>
                                       <a href="{{route('beers.show', compact('beer'))}}">
-                                        <i>
-                                            <i class="fas fa-eye"></i>
-                                        </i>
+                                        <button class="btn btn-primary">
+                                            <i>
+                                                <i class="fas fa-eye"></i>
+                                            </i>
+                                            Mostra Birra
+                                        </button>
+
                                     </a>
 
                                     <a href="{{route('beers.edit', compact('beer'))}}">
-                                        <i>
-                                            <i class="fas fa-edit"></i>
-                                        </i>
+                                        <button class="btn btn-primary">
+                                            <i>
+                                                <i class="fas fa-edit"></i>
+                                            </i>
+                                            Modifica Birra
+                                        </button>
+
                                     </a>
 
 
 
-                                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
                                                 <i class="fas fa-trash-alt"></i>
-
+                                            Elimina Birra
                                            </button>
-
-                                </td>
-                              </tr>
-                          </tbody>
+                                        </td>
+                                    </tr>
+                                </tbody>
                               @endforeach
-                      </table>
+                            </table>
+
                       <a href="{{route('beers.create')}}"><button class="btn btn-primary">Aggiungi una birra</button></a>
                       @include('beers.modal')
                   </div>

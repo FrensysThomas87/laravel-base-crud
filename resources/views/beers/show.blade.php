@@ -12,6 +12,7 @@
                               <p class="card-text">{{$beer->price}}</p>
                               <a href="{{route('beers.index')}}" class="btn btn-primary">See al beers</a>
                               <a href="{{route('beers.edit', compact('beer'))}}" class="btn btn-primary">Edit</a>
+                              <a href="{{route('beers.create')}}" class="btn btn-primary">Aggiungi una nuova birra</a>
                             </div>
                           </div>
                     </div>
