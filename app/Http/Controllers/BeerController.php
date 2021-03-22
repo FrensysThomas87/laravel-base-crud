@@ -42,11 +42,11 @@ class BeerController extends Controller
 
         $request->validate([
             'brand' => 'required|max:255',
-            'price' => 'required|max:6'
-
-
-
-
+            'beer_typology' => 'required|max:255',
+            'nationality' => 'required|max:255',
+            'liters' => 'required|numeric|between:0,99.99',
+            'price' => 'required|numeric|between:0,99.99',
+            'image' => 'required|max:2065'
             ]);
 
         $data = $request->all();

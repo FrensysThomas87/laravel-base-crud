@@ -10,65 +10,58 @@
 </head>
 <body>
 
-    @if ($errors->any())
-        <div class="alert alert-danger">
-        <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-        </ul>
-        </div>
-    @endif
+
+
     <div class="custom-container">
         <div class="container">
-            <form class="was-validated" action="{{route('beers.store')}}" method="post">
+            <form action="{{route('beers.store')}}" method="post">
                 @csrf
                 @method('POST')
                 <div class="form-group">
                     <label for="brand">Brand</label>
-                    <input type="text" class="form-control" name="brand" placeholder="Enter beer's brand" required>
+                    <input type="text" class="form-control {{$errors->has('brand') ? 'is-invalid' : ''}}" name="brand" placeholder="Enter beer's brand">
                     <div class="invalid-feedback">
-                        Perfavore inserisci il brand
+                        {{$errors->first('brand')}}
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="beer_typology">Beer's Typology</label>
-                    <input type="text" class="form-control" name="beer_typology" placeholder="Enter beer's typology" required>
+                    <input type="text" class="form-control {{$errors->has('beer_typology') ? 'is-invalid' : ''}}" name="beer_typology" placeholder="Enter beer's typology">
                     <div class="invalid-feedback">
-                        Perfavore inserisci la tipologia di birra
+                        {{$errors->first('beer_typology')}}
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="nationality">Nationality</label>
-                    <input type="text" class="form-control" name="nationality" placeholder="Enter Beer's Nationality" required>
+                    <input type="text" class="form-control {{$errors->has('nationality') ? 'is-invalid' : ''}}" name="nationality" placeholder="Enter Beer's Nationality">
                     <div class="invalid-feedback">
-                        Perfavore inserisci la nazionalità
+                        {{$errors->first('nationality')}}
                     </div>
                 </div>
 
                   <div class="form-group">
                     <label for="liters">Liters</label>
-                    <input type="text" class="form-control" name="liters" placeholder="Enter Liters" required>
+                    <input type="text" class="form-control {{$errors->has('liters') ? 'is-invalid' : ''}}" name="liters" placeholder="Enter Liters">
                     <div class="invalid-feedback">
-                        Perfavore inserisci i litri
+                        {{$errors->first('liters')}}
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="text" class="form-control" name="price" placeholder="Enter Price" required>
+                    <input type="text" class="form-control {{$errors->has('price') ? 'is-invalid' : ''}}" name="price" placeholder="Enter Price">
                     <div class="invalid-feedback">
-                        Perfavore inserisci il prezzo
+                        {{$errors->first('price')}}
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="text" class="form-control" name="image" placeholder="Enter Image's Url" required>
+                    <input type="text" class="form-control {{$errors->has('image') ? 'is-invalid' : ''}}" name="image" placeholder="Enter Image's Url">
                     <div class="invalid-feedback">
-                        Perfavore inserisci l'immagine
+                        {{$errors->first('image')}}
                     </div>
                   </div>
 
