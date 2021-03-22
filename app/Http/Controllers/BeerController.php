@@ -64,9 +64,7 @@ class BeerController extends Controller
 
     }
 
-    protected function formValidate(Request $request){
 
-    }
 
     /**
      * Display the specified resource.
@@ -82,12 +80,12 @@ class BeerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int Beer  $beer
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Beer $beer)
     {
-        //
+        return view('beers.edit', compact($beer));
     }
 
     /**
