@@ -1,5 +1,6 @@
 
 
+{{-- Qui controllo se la pagina da cui sto chiamando la form ha la variabile edit, se si sarà la form per editare il prodotto, altrimenti sarà quella per inserirlo --}}
 
 @php
 
@@ -16,6 +17,7 @@ if(isset($edit) && !empty($edit) ){
 @endphp
 
 
+{{-- Su ognuna di queste input sto controllando se ci sono errori di validazione se si diventeranno rosse, in più apparirà una scritta sotto l'input con l'errore --}}
 <form action="{{$url}}" method="post">
     @csrf
     @method($method)
