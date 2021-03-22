@@ -25,35 +25,56 @@
                 @csrf
                 @method('POST')
                 <div class="form-group">
-                  <label for="brand">Brand</label>
-                  <input type="text" class="form-control" name="brand" placeholder="Enter beer's brand" required>
+                    <label for="brand">Brand</label>
+                    <input type="text" class="form-control" name="brand" placeholder="Enter beer's brand" required>
+                    <div class="invalid-feedback">
+                        Perfavore inserisci il brand
+                    </div>
+                </div>
 
-                </div>
                 <div class="form-group">
-                  <label for="beer_typology">Beer's Typology</label>
-                  <input type="text" class="form-control" name="beer_typology" placeholder="Enter beer's typology" required>
+                    <label for="beer_typology">Beer's Typology</label>
+                    <input type="text" class="form-control" name="beer_typology" placeholder="Enter beer's typology" required>
+                    <div class="invalid-feedback">
+                        Perfavore inserisci la tipologia di birra
+                    </div>
                 </div>
+
                 <div class="form-group">
                     <label for="nationality">Nationality</label>
                     <input type="text" class="form-control" name="nationality" placeholder="Enter Beer's Nationality" required>
-                  </div>
+                    <div class="invalid-feedback">
+                        Perfavore inserisci la nazionalità
+                    </div>
+                </div>
+
                   <div class="form-group">
                     <label for="liters">Liters</label>
                     <input type="text" class="form-control" name="liters" placeholder="Enter Liters" required>
+                    <div class="invalid-feedback">
+                        Perfavore inserisci i litri
+                    </div>
                   </div>
+
                   <div class="form-group">
                     <label for="price">Price</label>
                     <input type="text" class="form-control" name="price" placeholder="Enter Price" required>
+                    <div class="invalid-feedback">
+                        Perfavore inserisci il prezzo
+                    </div>
                   </div>
+
                   <div class="form-group">
                     <label for="image">Image</label>
                     <input type="text" class="form-control" name="image" placeholder="Enter Image's Url" required>
+                    <div class="invalid-feedback">
+                        Perfavore inserisci l'immagine
+                    </div>
                   </div>
 
                 <button type="submit" class="btn btn-primary">Crea Prodotto</button>
               </form>
             </div>
-    </div>
-
+        </div>
     </body>
 </html>
