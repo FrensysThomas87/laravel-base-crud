@@ -64,6 +64,10 @@ class BeerController extends Controller
 
     }
 
+    protected function formValidate(Request $request){
+
+    }
+
     /**
      * Display the specified resource.
      *
