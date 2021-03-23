@@ -7,8 +7,8 @@
 3. CSS(SCSS BOOTSTRAP)
 4. MYSQL
 
-In questo progetto viene affrontato l'argomento delle CRUD e della creazione di tabelle alli'interno del database mysql tramite le migrations.
-Dopo aver creato la tabella "beers" verrà creato il model per la suddetta tabella e il controller. Nel controller tramite le sopracitate CRUD si programmeranno delle azioni da fare nella tabella birre, nella fattispecie sono:
+In questo progetto viene affrontato l'argomento delle CRUD e della creazione di tabelle all'interno del database mysql tramite le migrations.
+Dopo aver creato la tabella "beers" verrnno creati il model per la suddetta tabella e il controller. Nel controller tramite le sopracitate CRUD si programmeranno delle azioni da fare nella tabella birre, nella fattispecie sono:
 
 1. Innanzitutto nella pagina principale avremo tutte le birre con le relative caratteristiche esposte tramite una tabella. Da qui sarà possibile svolgere tutte le operazioni come la cancellazione, l'update e la insert.
 

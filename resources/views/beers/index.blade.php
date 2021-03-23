@@ -14,6 +14,7 @@
                               <th scope="col">Price</th>
                               <th scope="col">Liters</th>
                               <th scope="col">Image</th>
+                              <th scope="col">Created At</th>
                               <th scope="col">Actions</th>
                               </tr>
                           </thead>
@@ -27,6 +28,7 @@
                                   <td>{{$beer->price}}</td>
                                   <td>{{$beer->liters}}</td>
                                   <td><img src="{{$beer->image}}"/></td>
+                                  <td>{{$beer->created_at}}</td>
                                   <td>
                                       <a href="{{route('beers.show', compact('beer'))}}">
                                         <button class="btn btn-primary">
