@@ -50,10 +50,12 @@
 
                                     </a>
 
-                                    <button type="button" class="btn btn-danger bool-btn-destroy-index" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <button type="button" class="btn btn-danger bool-btn-destroy-index" data-toggle="modal" data-target="#exampleModalCenter{{$beer->id}}">
+
                                         <i class="fas fa-trash-alt"></i>
                                             Elimina Birra
                                     </button>
+                                    @include('beers.modal')
                                 </td>
                             </tr>
                         </tbody>
@@ -61,7 +63,7 @@
                     </table>
 
                       <a href="{{route('beers.create')}}"><button class="btn btn-primary">Aggiungi una birra</button></a>
-                      @include('beers.modal')
+
                   </div>
             @endsection
 
