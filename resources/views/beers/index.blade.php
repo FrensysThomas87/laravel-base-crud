@@ -31,7 +31,7 @@
                                   <td>{{$beer->created_at}}</td>
                                   <td>
                                       <a href="{{route('beers.show', compact('beer'))}}">
-                                        <button class="btn btn-primary">
+                                        <button class="btn btn-primary bool-btn-show-create">
                                             <i>
                                                 <i class="fas fa-eye"></i>
                                             </i>
@@ -41,7 +41,7 @@
                                     </a>
 
                                     <a href="{{route('beers.edit', compact('beer'))}}">
-                                        <button class="btn btn-primary">
+                                        <button class="btn btn-primary bool-btn-show-create">
                                             <i>
                                                 <i class="fas fa-edit"></i>
                                             </i>
@@ -50,7 +50,7 @@
 
                                     </a>
 
-                                    <button type="button" class="btn btn-danger bool-btn-destroy-index" data-toggle="modal" data-target="#exampleModalCenter{{$beer->id}}">
+                                    <button type="button" class="btn btn-danger bool-btn-destroy-index " data-toggle="modal" data-target="#exampleModalCenter{{$beer->id}}">
 
                                         <i class="fas fa-trash-alt"></i>
                                             Elimina Birra
